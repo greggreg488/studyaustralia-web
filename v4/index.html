@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>留学澳洲 StudyAustralia | 把留学做成一套系统</title>
+  <meta name="description" content="留学澳洲 StudyAustralia：澳洲本地团队 + 自研 AI 案件引擎。院校申请、学生签证支持、转学续签、疑难评估、探亲签证与落地服务，每份材料被核查，每个节点被记录。">
+  <meta property="og:title" content="留学澳洲 StudyAustralia | 把留学做成一套系统">
+  <meta property="og:description" content="澳洲本地团队 × 自研 AI 案件引擎：每份材料被核查，每个节点被记录，每一步都有交代。">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050608">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050608'/%3E%3Cpath d='M7 21 Q16 9 25 12' stroke='%2322d3ee' stroke-width='2' fill='none' stroke-dasharray='3 3'/%3E%3Ccircle cx='7' cy='21' r='2.4' fill='%2322d3ee'/%3E%3Ccircle cx='25' cy='12' r='2.4' fill='%23f2c14e'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/v4.css">
+</head>
+<body>
+
+  <div class="orbs" aria-hidden="true">
+    <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="navwrap">
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a class="brand" href="#" aria-label="留学澳洲 首页">
+        <svg class="brand-mark" viewBox="0 0 30 30" aria-hidden="true">
+          <rect width="30" height="30" rx="9" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)"/>
+          <path d="M7 20 Q15 9 23 12" stroke="#22d3ee" stroke-width="1.8" fill="none" stroke-dasharray="3 3"/>
+          <circle cx="7" cy="20" r="2.2" fill="#22d3ee"/>
+          <circle cx="23" cy="12" r="2.2" fill="#f2c14e"/>
+        </svg>
+        <span class="brand-cn">留学澳洲</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">服务</a></li>
+        <li><a href="#system">系统</a></li>
+        <li><a href="#paths">路线</a></li>
+        <li><a href="#partners">同行合作</a></li>
+        <li><a href="#faq">问答</a></li>
+        <li><a class="nav-cta" href="#contact">免费评估 <span class="cir">↗</span></a></li>
+      </ul>
+      <button class="nav-toggle" id="navtoggle" aria-expanded="false" aria-controls="menu" aria-label="打开菜单">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="menu-overlay" id="menu">
+    <ul>
+      <li><a href="#services">服务</a></li>
+      <li><a href="#system">系统</a></li>
+      <li><a href="#paths">路线</a></li>
+      <li><a href="#partners">同行合作</a></li>
+      <li><a href="#faq">问答</a></li>
+      <li><a href="#contact">免费评估</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- ============ Hero：宣言 × 案件引擎 ============ -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="tag-pill"><span class="dot"></span>STUDYAUSTRALIA · 留学服务系统</span>
+          <h1>我们把留学，<br>做成了<span class="glow">一套系统</span>。</h1>
+          <p class="sub">澳洲本地团队 × 自研 AI 案件引擎：每份材料被核查，每个节点被记录，每一步都有交代。这就是我们和传统中介不一样的地方。</p>
+          <div class="hero-ctas">
+            <a class="btn btn-light" href="#contact">免费评估 <span class="cir">↗</span></a>
+            <a class="btn btn-glass" href="#system">看系统怎么工作 <span class="cir">↓</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><b>材料</b> 真实合规</span>
+            <span><b>递交</b> 以你本人名义</span>
+            <span><b>进度</b> 全程透明</span>
+          </div>
+        </div>
+
+        <div class="console-shell rv">
+          <div class="shell">
+            <div class="core console">
+              <div class="console-bar">
+                <span class="label">CASE ENGINE · 案件引擎</span>
+                <span class="live">LIVE</span>
+              </div>
+              <div class="console-stages">
+                <span class="stage done" data-i="0">评估</span>
+                <span class="stage done" data-i="1">方案</span>
+                <span class="stage now" data-i="2">材料</span>
+                <span class="stage" data-i="3">递交</span>
+                <span class="stage" data-i="4">下签</span>
+              </div>
+              <div class="console-log" id="clog" aria-label="案件引擎工作日志示意"></div>
+              <div class="console-foot">
+                <div class="progress"><i id="cbar"></i></div>
+                <span class="pct" id="cpct">SYNC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 宣言 marquee ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="mq">
+        <span><b>材料真实</b> <i>✦</i> <b>过程留痕</b> <i>✦</i> <b>进度透明</b> <i>✦</i> 不编故事 <i>✦</i> 不承诺结果，承诺过程质量 <i>✦</i></span>
+        <span><b>材料真实</b> <i>✦</i> <b>过程留痕</b> <i>✦</i> <b>进度透明</b> <i>✦</i> 不编故事 <i>✦</i> 不承诺结果，承诺过程质量 <i>✦</i></span>
+      </div>
+    </div>
+
+    <!-- ============ 服务：编号索引 ============ -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <span class="tag-pill">SERVICES</span>
+          <h2 class="h2">全周期服务，<em>每一件都在系统里跑</em></h2>
+        </div>
+        <div class="idx">
+          <a class="idx-row rv" href="#contact">
+            <span class="idx-num">01</span>
+            <span class="idx-main">
+              <h3>学生签证（Subclass 500）全程支持</h3>
+              <p>材料清单规划、真实学生（GS）陈述辅导、递交前多轮核查。申请以你本人名义递交，每一份材料都经得起看。</p>
+            </span>
+            <span class="idx-tag">Visa 500</span>
+            <span class="idx-go">→</span>
+          </a>
+          <a class="idx-row rv" href="#contact">
+            <span class="idx-num">02</span>
+            <span class="idx-main">
+              <h3>留学规划与院校申请</h3>
+              <p>语言课程、College、TAFE 到本硕：按背景与预算选校，从 Offer 到 CoE 逐步落实。</p>
+            </span>
+            <span class="idx-tag">Planning</span>
+            <span class="idx-go">→</span>
+          </a>
+          <a class="idx-row rv" href="#contact">
+            <span class="idx-num">03</span>
+            <span class="idx-main">
+              <h3>在澳转学与续签</h3>
+              <p>换学校、换专业、升学衔接与续签时间线管理，避免学籍与签证脱节。</p>
+            </span>
+            <span class="idx-tag">Transfer</span>
+            <span class="idx-go">→</span>
+          </a>
+          <a class="idx-row rv" href="#contact">
+            <span class="idx-num">04</span>
+            <span class="idx-main">
+              <h3>疑难情况评估</h3>
+              <p>拒签复盘、复杂签证史、时间紧迫：先把事实与证据理清楚，再谈方案，不夸大。</p>
+            </span>
+            <span class="idx-tag">Assessment</span>
+            <span class="idx-go">→</span>
+          </a>
+          <a class="idx-row rv" href="#contact">
+            <span class="idx-num">05</span>
+            <span class="idx-main">
+              <h3>访客与探亲签证（600）</h3>
+              <p>父母来澳探亲、参加毕业典礼：行程与材料如实规划，安心团聚。</p>
+            </span>
+            <span class="idx-tag">Visitor 600</span>
+            <span class="idx-go">→</span>
+          </a>
+          <a class="idx-row rv" href="#contact">
+            <span class="idx-num">06</span>
+            <span class="idx-main">
+              <h3>保险与落地服务</h3>
+              <p>OSHC 学生保险、行前清单、接机住宿建议、落地安顿与档案管理，落地第一周不慌。</p>
+            </span>
+            <span class="idx-tag">Landing</span>
+            <span class="idx-go">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 系统 bento ============ -->
+    <section class="section tight" id="system">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <span class="tag-pill"><span class="dot"></span>THE SYSTEM</span>
+          <h2 class="h2">打开引擎盖：<em>AI 负责不出错，顾问负责判断</em></h2>
+          <p class="sub">大多数机构靠人盯表格。我们把整套流程搬进自研案件引擎，让该自动的自动，该人来的人来。</p>
+        </div>
+        <div class="bento">
+          <div class="b-cell wide rv">
+            <div class="shell" style="height:100%">
+              <div class="core flowviz">
+                <span class="b-mono">CASE PIPELINE · 案件流水线</span>
+                <svg viewBox="0 0 640 150" aria-label="案件流水线：档案、核查、递交、跟进、落地">
+                  <defs>
+                    <linearGradient id="fl" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#f2c14e"/>
+                    </linearGradient>
+                  </defs>
+                  <path class="dashflow" d="M60 75 H580" stroke="url(#fl)" stroke-width="2" fill="none"/>
+                  <g font-size="13" fill="#a3b0c2" text-anchor="middle" font-weight="600">
+                    <g><circle cx="60" cy="75" r="17" fill="#0a0d13" stroke="#22d3ee" stroke-width="2"/><text x="60" y="80" fill="#22d3ee">档</text><text x="60" y="122">数字档案</text></g>
+                    <g><circle cx="190" cy="75" r="17" fill="#0a0d13" stroke="#34d399" stroke-width="2"/><text x="190" y="80" fill="#34d399">查</text><text x="190" y="122">智能核查</text></g>
+                    <g><circle cx="320" cy="75" r="17" fill="#0a0d13" stroke="#f2f5f9" stroke-width="2"/><text x="320" y="80" fill="#f2f5f9">人</text><text x="320" y="122">顾问判断</text></g>
+                    <g><circle cx="450" cy="75" r="17" fill="#0a0d13" stroke="#f2c14e" stroke-width="2"/><text x="450" y="80" fill="#f2c14e">递</text><text x="450" y="122">本人递交</text></g>
+                    <g><circle cx="580" cy="75" r="17" fill="#0a0d13" stroke="#a78bfa" stroke-width="2"/><text x="580" y="80" fill="#a78bfa">跟</text><text x="580" y="122">跟进落地</text></g>
+                  </g>
+                </svg>
+                <p style="color:var(--txt-2);font-size:0.92rem;max-width:44em;">每个案件在流水线上跑：材料齐不齐、版本对不对、进度到哪一步，系统说了算，不靠记忆。关键判断永远由人做，系统保证人不漏事。</p>
+              </div>
+            </div>
+          </div>
+          <div class="b-cell rv rv-1">
+            <div class="shell" style="height:100%">
+              <div class="core b-inner" style="display:flex;flex-direction:column;justify-content:center;">
+                <span class="b-mono">ALWAYS ON</span>
+                <div class="always" style="margin-top:14px;">7 × 24<small>系统不下班。你半夜传的材料，早上已经在核查队列里。</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="b-cell half rv">
+            <div class="shell" style="height:100%">
+              <div class="core b-inner">
+                <div class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></div>
+                <h3>每位学生一套数字档案</h3>
+                <p>材料、版本、进度全部结构化留痕，随时可回看。你的案子不依赖任何一个人的记性，也不会因为换顾问而断档。</p>
+              </div>
+            </div>
+          </div>
+          <div class="b-cell half rv rv-1">
+            <div class="shell" style="height:100%">
+              <div class="core b-inner">
+                <div class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 3l8 3.5v5c0 5-3.5 8.5-8 9.5-4.5-1-8-4.5-8-9.5v-5z"/><path d="M9 12l2.2 2.2L16 9.5"/></svg></div>
+                <h3>递交前多轮智能核查</h3>
+                <p>完整性、一致性、常见硬伤，机器先扫一遍、人再审一遍。问题在递交前被拦下，而不是在拒签信里被发现。</p>
+              </div>
+            </div>
+          </div>
+          <div class="b-cell half rv">
+            <div class="shell" style="height:100%">
+              <div class="core b-inner">
+                <div class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+                <h3>节点主动同步</h3>
+                <p>关键进展主动告诉你，不用追着问「到哪了」。你看到的进度，就是系统里真实的进度。</p>
+              </div>
+            </div>
+          </div>
+          <div class="b-cell half rv rv-1">
+            <div class="shell" style="height:100%">
+              <div class="core b-inner">
+                <div class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+                <h3>隐私有硬边界</h3>
+                <p>材料仅用于你本人的申请。护照、证件、账户类敏感信息有硬性访问边界，绝不作他用。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 路线：地铁图 ============ -->
+    <section class="section" id="paths">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <span class="tag-pill">PATHWAYS</span>
+          <h2 class="h2">四条线路，<em>像坐地铁一样看懂留学路径</em></h2>
+          <p class="sub">不同背景有不同走法。先评估、再选线，不走弯路。</p>
+        </div>
+        <div class="shell rv">
+          <div class="core">
+            <div class="metro-wrap">
+              <div class="metro" style="padding:34px 44px;">
+                <div class="metro-line m1">
+                  <div class="metro-name"><span class="b-mono">LINE 01</span><h3>中学线</h3></div>
+                  <div class="track">
+                    <div class="rail"></div>
+                    <div class="stations">
+                      <span class="station"><i></i><span>国内初中</span></span>
+                      <span class="station"><i></i><span>澳洲中学</span></span>
+                      <span class="station"><i></i><span>高考体系</span></span>
+                      <span class="station end"><i></i><span>本科</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="metro-line m2">
+                  <div class="metro-name"><span class="b-mono">LINE 02</span><h3>本科线</h3></div>
+                  <div class="track">
+                    <div class="rail"></div>
+                    <div class="stations">
+                      <span class="station"><i></i><span>高中毕业</span></span>
+                      <span class="station"><i></i><span>预科 / 国际大一</span></span>
+                      <span class="station"><i></i><span>本科</span></span>
+                      <span class="station end"><i></i><span>毕业工签</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="metro-line m3">
+                  <div class="metro-name"><span class="b-mono">LINE 03</span><h3>硕博线</h3></div>
+                  <div class="track">
+                    <div class="rail"></div>
+                    <div class="stations">
+                      <span class="station"><i></i><span>本科 / 在职</span></span>
+                      <span class="station"><i></i><span>硕士</span></span>
+                      <span class="station"><i></i><span>博士 / 就业</span></span>
+                      <span class="station end"><i></i><span>长期发展</span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="metro-line m4">
+                  <div class="metro-name"><span class="b-mono">LINE 04</span><h3>职教线（TAFE）</h3></div>
+                  <div class="track">
+                    <div class="rail"></div>
+                    <div class="stations">
+                      <span class="station"><i></i><span>语言班</span></span>
+                      <span class="station"><i></i><span>TAFE 技能课程</span></span>
+                      <span class="station"><i></i><span>实习就业</span></span>
+                      <span class="station end"><i></i><span>升学 / 发展</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 同行合作 ============ -->
+    <section class="section tight" id="partners">
+      <div class="wrap">
+        <div class="shell rv">
+          <div class="core partner-core">
+            <div>
+              <span class="tag-pill">FOR PARTNERS · 同行合作</span>
+              <h2>你负责前端客户，<br>我们做你的澳洲端系统后端。</h2>
+              <p class="sub">留学机构与独立顾问：把案子交给一套看得见过程的系统，而不是一个看心情的团队。</p>
+              <a class="btn btn-light" href="#contact">洽谈合作 <span class="cir">↗</span></a>
+            </div>
+            <div class="p-points">
+              <span class="p-point"><span><b>逐案对账</b>：项目与佣金逐案核对，账目清楚、定期结算。</span></span>
+              <span class="p-point"><span><b>界面清楚</b>：客户关系与品牌归你，我们不越界、不抢客。</span></span>
+              <span class="p-point"><span><b>疑难案后端</b>：拒签、复杂签证史、时间紧迫案件的评估与处理。</span></span>
+              <span class="p-point"><span><b>数据边界</b>：客户材料只用于该案件，敏感凭据硬性隔离。</span></span>
+              <span class="p-point"><span><b>同一套引擎</b>：与直客相同的档案、核查与节点同步，案量大也不漏事。</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 场景 ============ -->
+    <section class="section" id="cases">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <span class="tag-pill">SCENARIOS</span>
+          <h2 class="h2">你可能正在经历</h2>
+        </div>
+        <div class="scene-grid">
+          <div class="shell rv">
+            <div class="core scene-inner">
+              <span class="b-mono">CASE · 新申请</span>
+              <h3>国内毕业，想去澳洲读硕士</h3>
+              <p>从选校到签证一条线做完；时间规划前置，不卡在材料上。</p>
+            </div>
+          </div>
+          <div class="shell rv rv-1">
+            <div class="core scene-inner">
+              <span class="b-mono">CASE · 在澳转学</span>
+              <h3>在澳洲读书，想换学校换专业</h3>
+              <p>转学与签证的衔接是最容易踩坑的一段，先评估清楚再动手。</p>
+            </div>
+          </div>
+          <div class="shell rv">
+            <div class="core scene-inner">
+              <span class="b-mono">CASE · 拒签之后</span>
+              <h3>签证被拒了，不知道下一步</h3>
+              <p>先把拒签原因读透，再评估重新申请或复审方向的可行性，不盲目再递。</p>
+            </div>
+          </div>
+          <div class="shell rv rv-1">
+            <div class="core scene-inner">
+              <span class="b-mono">CASE · 探亲</span>
+              <h3>父母想来澳洲看看我</h3>
+              <p>探亲签证的行程与材料如实规划，把团聚这件事安排稳妥。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section tight" id="faq">
+      <div class="wrap">
+        <div class="sec-head rv" style="text-align:center;">
+          <h2 class="h2">常见问题</h2>
+        </div>
+        <div class="faq-wrap rv">
+          <details class="faq">
+            <summary>你们是移民代理（MARA）吗？</summary>
+            <p class="faq-a">我们是教育咨询机构，不是澳大利亚注册移民代理，也不提供移民法律意见。签证申请以学生本人名义递交，我们做的是择校申请、材料整理与流程支持；涉及法律意见的情形，我们会建议你咨询注册移民代理或律师。</p>
+          </details>
+          <details class="faq">
+            <summary>咨询收费吗？</summary>
+            <p class="faq-a">初步评估免费。确定要做之后，我们会给出书面方案，路径、时间线和费用一次说清。</p>
+          </details>
+          <details class="faq">
+            <summary>能保证下签吗？</summary>
+            <p class="faq-a">没有任何机构能保证签证结果，说能保证的请保持警惕。我们承诺的是过程质量：材料真实、完整、一致，每一步有核查、有记录。</p>
+          </details>
+          <details class="faq">
+            <summary>我的材料和隐私安全吗？</summary>
+            <p class="faq-a">所有材料进入标准化电子档案，仅用于你本人的申请；护照、证件、账户类敏感信息有严格的内部访问边界，不会用于任何其他用途。</p>
+          </details>
+          <details class="faq">
+            <summary>人在澳洲、签证快到期了还来得及吗？</summary>
+            <p class="faq-a">越早评估越好。时间紧迫的案件我们会先做可行性判断：能做就全速推进，不能做也会直接告诉你，不耽误你的时间。</p>
+          </details>
+          <details class="faq">
+            <summary>我是留学机构，可以和你们合作吗？</summary>
+            <p class="faq-a">可以。我们为留学机构与独立顾问提供澳洲端后端支持：申请与签证流程、疑难案件评估、保险与落地，逐案对账、界面清楚、不越界不抢客。添加下方微信并备注「渠道合作」即可。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section" id="contact" style="padding-top:60px;">
+      <div class="wrap">
+        <div class="shell rv">
+          <div class="core cta-core">
+            <div class="cta-grid">
+              <div>
+                <span class="tag-pill"><span class="dot"></span>FREE ASSESSMENT</span>
+                <h2>先聊清楚，<br>再决定。</h2>
+                <p class="sub">你的背景、目标和可行路径，我们先给判断：值不值得做、怎么做、大概多久。评估免费。</p>
+                <a class="btn btn-light" href="#contact-qr">微信扫码咨询 <span class="cir">↗</span></a>
+              </div>
+              <div class="shell" id="contact-qr">
+                <div class="core qr-card">
+                  <!-- 真实二维码到位后替换：<img src="assets/wechat-qr.png" alt="顾问微信二维码"> -->
+                  <div class="qr-box">微信二维码</div>
+                  <p class="cap">扫码添加顾问微信<br>学生备注 <b>「留学咨询」</b> · 同行备注 <b>「渠道合作」</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="brand">
+          <svg class="brand-mark" viewBox="0 0 30 30" aria-hidden="true">
+            <rect width="30" height="30" rx="9" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)"/>
+            <path d="M7 20 Q15 9 23 12" stroke="#22d3ee" stroke-width="1.8" fill="none" stroke-dasharray="3 3"/>
+            <circle cx="7" cy="20" r="2.2" fill="#22d3ee"/>
+            <circle cx="23" cy="12" r="2.2" fill="#f2c14e"/>
+          </svg>
+          <span class="brand-cn">留学澳洲 <span style="font-weight:500;color:var(--txt-3);font-size:0.8rem;letter-spacing:0.2em;">STUDYAUSTRALIA</span></span>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#services">服务</a></li>
+          <li><a href="#system">系统</a></li>
+          <li><a href="#paths">路线</a></li>
+          <li><a href="#partners">同行合作</a></li>
+          <li><a href="#contact">联系我们</a></li>
+        </ul>
+      </div>
+      <p class="footer-legal">
+        本网站内容仅为一般信息分享，不构成移民法律意见；签证申请均以申请人本人名义递交。<br>
+        © <span id="year">2026</span> StudyAustralia 留学澳洲 · 保留所有权利
+      </p>
+    </div>
+  </footer>
+
+  <script src="../js/v4.js"></script>
+</body>
+</html>
