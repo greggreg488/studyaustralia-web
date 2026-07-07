@@ -1,19 +1,19 @@
-/* StudyAustralia 留学澳洲 官网交互：导航状态 / 移动菜单 / 滚动显现 / 年份
-   约定：不用 window scroll 监听（性能），全部走 IntersectionObserver */
+/* StudyAustralia 留学澳洲 · 高端版交互
+   约定：不用 window scroll 监听；导航态与滚动显现全部走 IntersectionObserver */
 (function () {
   "use strict";
 
   var nav = document.getElementById("nav");
-  var toggle = document.querySelector(".nav-toggle");
-  var links = document.getElementById("nav-links");
+  var toggle = document.getElementById("navtoggle");
+  var links = document.getElementById("navlinks");
 
-  /* 导航滚动态：页面顶部放一个哨兵，离开视口即加边框 */
+  /* 导航：离开页面顶部 → 实心浅色（.solid）；回到 hero 顶部 → 透明深色 */
   if (nav && "IntersectionObserver" in window) {
     var sentinel = document.createElement("div");
-    sentinel.style.cssText = "position:absolute;top:0;left:0;width:1px;height:1px;";
+    sentinel.style.cssText = "position:absolute;top:0;left:0;width:1px;height:120px;pointer-events:none;";
     document.body.prepend(sentinel);
     new IntersectionObserver(function (entries) {
-      nav.classList.toggle("scrolled", !entries[0].isIntersecting);
+      nav.classList.toggle("solid", !entries[0].isIntersecting);
     }).observe(sentinel);
   }
 
@@ -33,7 +33,7 @@
   }
 
   /* 滚动显现（reduced-motion 由 CSS 兜底为常显） */
-  var revealEls = document.querySelectorAll(".reveal");
+  var revealEls = document.querySelectorAll(".rv");
   if ("IntersectionObserver" in window && revealEls.length) {
     var io = new IntersectionObserver(
       function (entries) {
@@ -44,7 +44,7 @@
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.12, rootMargin: "0px 0px -60px 0px" }
     );
     revealEls.forEach(function (el) { io.observe(el); });
   } else {
